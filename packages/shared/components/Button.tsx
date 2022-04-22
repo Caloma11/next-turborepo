@@ -2,7 +2,7 @@ import * as React from "react";
 import styled from "styled-components";
 
 const StyledBtn = styled.button`
-  background-color: black;
+  background-color: olive;
 `;
 export const Button = () => {
   return <StyledBtn>Booopopp</StyledBtn>;

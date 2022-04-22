@@ -1,12 +1,13 @@
 {
-  "name": "docs",
+  "name": "login",
   "version": "0.0.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "cypress": "cypress open"
   },
   "dependencies": {
     "next": "^12.1.5",
@@ -17,8 +18,9 @@
   },
   "devDependencies": {
     "@types/node": "^17.0.12",
-    "@types/react": "17.0.37",
+    "@types/react": "^18.0.6",
     "config": "*",
+    "cypress": "^9.5.4",
     "eslint": "^8.13.0",
     "next-transpile-modules": "9.0.0",
     "tsconfig": "*",
