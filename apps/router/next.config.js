@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const development = process.env.NODE_ENV === 'development'
-const LOGIN_URL = development ? process.env.LOGIN_URL : `https://nextjs-monorepo-psi.vercel.app`
-const WEB_URL = development ? process.env.WEB_URL : `https://nextjs-monorepo-webapp.vercel.app`
+const LOGIN_URL = development ? process.env.LOGIN_URL : `https://login-app-steel.vercel.app`
+const WEB_URL = development ? process.env.WEB_URL : `https://web-app-seven-rosy.vercel.app`
 const { UBBU_URL } = process.env
 const withTM = require('next-transpile-modules')(['shared']);
 
