@@ -1,5 +1,5 @@
-import { Button } from "shared";
-import styled from "styled-components";
+import { Button } from 'shared';
+import styled from 'styled-components';
 
 const Title = styled.h1`
   color: green;

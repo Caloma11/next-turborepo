@@ -5,8 +5,8 @@ const nextConfig = withTM({
   reactStrictMode: true,
   distDir: 'build',
   compiler: {
-    styledComponents: true,
+    styledComponents: true
   }
-})
+});
 
-module.exports = nextConfig
+module.exports = nextConfig;

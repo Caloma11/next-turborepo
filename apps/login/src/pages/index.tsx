@@ -1,4 +1,4 @@
-import { Button } from "shared";
+import { Button } from 'shared';
 
 export default function Home() {
   return (
@@ -6,5 +6,5 @@ export default function Home() {
       <Button />
       <p>LOGIN</p>
     </div>
-  )
+  );
 }
