@@ -1,20 +1,12 @@
-const withTM = require("next-transpile-modules")(["shared"]);
+/** @type {import('next').NextConfig} */
+const withTM = require('next-transpile-modules')(['shared']);
 
-module.exports = withTM({
+const nextConfig = withTM({
   reactStrictMode: true,
-  async rewrites() {
-    return [
-      {
-        source: "/login",
-        destination: "https://login-app-steel.vercel.app/login",
-      },
-      {
-        source: "/register",
-        destination: "https://play.ubbu.io/signup#!/sign-up",
-      }
-    ]
-  },
+  basePath: '/web',
   compiler: {
     styledComponents: true,
   }
-});
+})
+
+module.exports = nextConfig

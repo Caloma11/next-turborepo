@@ -1,8 +1,11 @@
-const withTM = require("next-transpile-modules")(["shared"]);
+const withTM = require('next-transpile-modules')(['shared']);
 
-module.exports = withTM({
+const nextConfig = withTM({
   reactStrictMode: true,
+  basePath: '/login',
   compiler: {
     styledComponents: true,
   }
-});
+})
+
+module.exports = nextConfig
