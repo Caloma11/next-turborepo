@@ -1,10 +1,17 @@
 {
   "pipeline": {
     "build": {
-      "dependsOn": ["^build"],
-      "outputs": ["dist/**", ".next/**"]
+      "dependsOn": ["^build"]
     },
     "lint": {
+      "outputs": []
+    },
+    "e2e-headless": {
+      "dependsOn": ["build"],
+      "outputs": []
+    },
+    "test": {
+      "dependsOn": ["build"],
       "outputs": []
     },
     "dev": {

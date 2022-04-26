@@ -9,6 +9,8 @@
   "scripts": {
     "build": "turbo run build",
     "dev": "turbo run dev --parallel",
+    "e2e": "turbo run e2e-headless",
+    "test": "turbo run test",
     "lint": "turbo run lint",
     "storybook": "turbo run storybook --scope='shared' --no-deps"
   },
