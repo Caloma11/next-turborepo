@@ -1,12 +1,12 @@
-const commons = require('config/next-common.config');
+const commons = require('config/commons/next.config');
 
 const development = process.env.NODE_ENV === 'development';
 const LOGIN_URL = development
   ? process.env.LOGIN_URL
-  : `https://login-app-steel.vercel.app`;
+  : 'https://login-app-steel.vercel.app';
 const WEB_URL = development
   ? process.env.WEB_URL
-  : `https://web-app-seven-rosy.vercel.app`;
+  : 'https://web-app-seven-rosy.vercel.app';
 const { UBBU_URL } = process.env;
 
 const nextConfig = {
@@ -35,6 +35,7 @@ const nextConfig = {
           destination: `${WEB_URL}/web/:path*`
         }
       ],
+
       fallback: [
         {
           source: '/:path*',

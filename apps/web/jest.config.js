@@ -1,4 +1,4 @@
-const commons = require('config/jest-common');
+const commons = require('config/commons/jest.config');
 const nextJest = require('next/jest');
 
 const createJestConfig = nextJest({

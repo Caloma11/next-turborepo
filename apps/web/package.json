@@ -8,8 +8,8 @@
     "start": "next start -p 3002",
     "lint": "next lint",
     "test": "jest --colors",
-    "e2e": "cypress open -C ../../packages/config/cypress.json",
-    "e2e-headless": "cypress run -qC ../../packages/config/cypress.json"
+    "e2e": "cypress open -C ../../packages/config/commons/cypress.json",
+    "e2e-headless": "cypress run -qC ../../packages/config/commons/cypress.json"
   },
   "dependencies": {
     "next": "^12.1.5",
@@ -19,17 +19,16 @@
     "styled-components": "^5.3.5"
   },
   "devDependencies": {
+    "config": "*",
+    "tsconfig": "*",
+    "next-transpile-modules": "9.0.0",
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.1.1",
     "@types/node": "^17.0.12",
     "@types/react": "^18.0.6",
-    "config": "*",
     "cypress": "^9.5.4",
-    "eslint": "^8.13.0",
     "jest": "^28.0.1",
     "jest-environment-jsdom": "^28.0.1",
-    "next-transpile-modules": "9.0.0",
-    "tsconfig": "*",
     "typescript": "^4.6.3"
   }
 }
