@@ -10,6 +10,7 @@ This turborepo uses [Yarn](https://classic.yarnpkg.com/lang/en/) as a package ma
 
 - `docs`: a [Next.js](https://nextjs.org) app
 - `web`: another [Next.js](https://nextjs.org) app
+- `router`: a [Next.js](https://nextjs.org) app used to route traffic between the other applications
 - `ui`: a stub React component library shared by both `web` and `docs` applications
 - `config`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
 - `tsconfig`: `tsconfig.json`s used throughout the monorepo
