@@ -3,7 +3,7 @@ const withTM = require('next-transpile-modules')(['shared']);
 
 const nextConfig = withTM({
   reactStrictMode: true,
-  distDir: 'build',
+  // distDir: 'build',
   compiler: {
     styledComponents: true
   }
