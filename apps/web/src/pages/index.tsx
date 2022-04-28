@@ -14,5 +14,3 @@ export default function Web() {
     </div>
   );
 }
-
-// comments
