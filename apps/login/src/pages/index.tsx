@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <div>
       <Button />
-      <p>LOGIN</p>
+      <p>{process.env.TITLE || 'LOGIN'}</p>
     </div>
   );
 }
