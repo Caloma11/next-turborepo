@@ -2,7 +2,7 @@ const commons = require('config/commons/next.config');
 
 const nextConfig = {
   ...commons,
-  basePath: '/signup'
+  basePath: '/login'
 };
 
 module.exports = nextConfig;
