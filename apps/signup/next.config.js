@@ -1,6 +1,8 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  reactStrictMode: true,
-}
+const commons = require('config/commons/next.config');
 
-module.exports = nextConfig
+const nextConfig = {
+  ...commons,
+  basePath: '/login'
+};
+
+module.exports = nextConfig;

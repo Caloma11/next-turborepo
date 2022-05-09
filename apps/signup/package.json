@@ -1,20 +1,34 @@
 {
-  "name": "signup",
-  "version": "0.1.0",
+  "name": "login",
+  "version": "0.0.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev -p 3001",
     "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "start": "next start -p 3001",
+    "lint": "next lint",
+    "test": "jest --colors",
+    "e2e": "cypress open -C ../../packages/config/commons/cypress.json",
+    "e2e-headless": "cypress run -qC ../../packages/config/commons/cypress.json"
   },
   "dependencies": {
-    "next": "12.1.6",
-    "react": "18.1.0",
-    "react-dom": "18.1.0"
+    "next": "^12.1.5",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "shared": "*",
+    "styled-components": "^5.3.5"
   },
   "devDependencies": {
-    "eslint": "8.15.0",
-    "eslint-config-next": "12.1.6"
+    "@testing-library/jest-dom": "^5.16.4",
+    "@testing-library/react": "^13.1.1",
+    "@types/node": "^17.0.12",
+    "@types/react": "^18.0.6",
+    "config": "*",
+    "cypress": "^9.5.4",
+    "jest": "^28.0.1",
+    "jest-environment-jsdom": "^28.0.1",
+    "next-transpile-modules": "9.0.0",
+    "tsconfig": "*",
+    "typescript": "^4.6.3"
   }
 }
